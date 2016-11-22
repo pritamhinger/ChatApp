@@ -17,6 +17,8 @@
 		480AC9F71DE49CD000ACC9BA /* TTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9F61DE49CD000ACC9BA /* TTVUITests.swift */; };
 		480ACA051DE49E1D00ACC9BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */; };
 		48F61BF81DE4A85300DBBE29 /* ChatRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */; };
+		48F61BFA1DE4AA6800DBBE29 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */; };
+		48F61BFC1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */; };
 		4D145A59A0CEB0093BE22C1B /* Pods_TTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F49CE2C7C56FB6EA41EEA /* Pods_TTV.framework */; };
 		D287ED4225427F846C65076E /* Pods_TTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64442F8178558677CCEEFC80 /* Pods_TTVUITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		480AC9F81DE49CD000ACC9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomsTableViewController.swift; sourceTree = "<group>"; };
+		48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		5DE45AF933A6BB4D5C482B28 /* Pods_TTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64442F8178558677CCEEFC80 /* Pods_TTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC1AEFB43858EEFD1DAA3C5 /* Pods-TTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTVTests/Pods-TTVTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				480AC9DF1DE49CD000ACC9BA /* LaunchScreen.storyboard */,
 				480AC9E21DE49CD000ACC9BA /* Info.plist */,
 				48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */,
+				48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */,
+				48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */,
 			);
 			path = TTV;
 			sourceTree = "<group>";
@@ -458,6 +464,8 @@
 			files = (
 				480AC9D91DE49CD000ACC9BA /* ViewController.swift in Sources */,
 				480AC9D71DE49CD000ACC9BA /* AppDelegate.swift in Sources */,
+				48F61BFA1DE4AA6800DBBE29 /* ChatRoom.swift in Sources */,
+				48F61BFC1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift in Sources */,
 				48F61BF81DE4A85300DBBE29 /* ChatRoomsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,38 +17,57 @@ class ChatRoomsTableViewController: UITableViewController {
     
     var senderName:String?
     var newChatRoomNameTextField:UITextField?
-    private var chatRoomsList:[String]?
+    private var chatRoomsList:[ChatRoom] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        chatRoomsList.append(ChatRoom(id: "1", name: "Room 1"))
+        chatRoomsList.append(ChatRoom(id: "2", name: "Room 2"))
+        chatRoomsList.append(ChatRoom(id: "3", name: "Room 3"))
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if let currentSection:Section = Section(rawValue: section){
+            switch currentSection {
+            case .createNewChatRoomSection:
+                return 1;
+            case .currentChatRoomSection:
+                return chatRoomsList.count
+            }
+        }
+        else{
+            return 0
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellIdentifier = (indexPath as NSIndexPath).section == Section.createNewChatRoomSection.rawValue ? "NewChatRoom" : "ChatRoom"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
-        // Configure the cell...
+        if indexPath.section == Section.createNewChatRoomSection.rawValue {
+            if let newChatRoomCell = cell as? ChatRoomTableViewCell{
+                newChatRoomNameTextField = newChatRoomCell.chatRoomTextField
+            }
+        }
+        else if indexPath.section == Section.currentChatRoomSection.rawValue{
+            cell.textLabel?.text = chatRoomsList[indexPath.row].roomName
+        }
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
