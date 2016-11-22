@@ -32,20 +32,30 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7H-4F-8zc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter your username here" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ak1-pO-MYS">
+                                <rect key="frame" x="16" y="280" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ak1-pO-MYS" secondAttribute="trailing" id="09P-mO-D5N"/>
                             <constraint firstItem="Ol4-5A-WPS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gt8-1b-WqX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ak1-pO-MYS" secondAttribute="leading" id="SDB-xY-gqJ"/>
+                            <constraint firstItem="Ol4-5A-WPS" firstAttribute="top" secondItem="Ak1-pO-MYS" secondAttribute="bottom" constant="8" id="ozQ-wN-maa"/>
                             <constraint firstItem="Ol4-5A-WPS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tZd-2j-m1L"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="usernameTextField" destination="Ak1-pO-MYS" id="X5y-5q-4cf"/>
                         <segue destination="XMA-hD-zn4" kind="show" identifier="mainWindow" id="XeK-Ir-tah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="125"/>
+            <point key="canvasLocation" x="-460" y="124.58770614692655"/>
         </scene>
         <!--Chat Rooms Table View Controller-->
         <scene sceneID="RmR-QO-aRt">
@@ -118,10 +128,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ce5-4D-bHR"/>
+                    <connections>
+                        <segue destination="Rz5-Xq-bmf" kind="showDetail" identifier="showChatRoom" id="5ta-hG-vdT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZa-pt-x9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218" y="125"/>
+        </scene>
+        <!--Chat Room View Controller-->
+        <scene sceneID="Mwb-G4-RGn">
+            <objects>
+                <viewController id="Rz5-Xq-bmf" customClass="ChatRoomViewController" customModule="TTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l6P-gM-E01"/>
+                        <viewControllerLayoutGuide type="bottom" id="EnB-oD-rtg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ag5-ya-6Cq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OP-Ig-Fws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jy7-62-wLW">

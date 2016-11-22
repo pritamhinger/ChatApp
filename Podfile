@@ -9,6 +9,7 @@ target 'TTV' do
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'JSQMessagesViewController'
 
   target 'TTVTests' do
     inherit! :search_paths

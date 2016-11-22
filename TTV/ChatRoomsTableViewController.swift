@@ -44,14 +44,6 @@ class ChatRoomsTableViewController: UITableViewController {
             newChatRoomRef.setValue(chatRoomNode);
         }
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        chatRoomsList.append(ChatRoom(id: "1", name: "Room 1"))
-//        chatRoomsList.append(ChatRoom(id: "2", name: "Room 2"))
-//        chatRoomsList.append(ChatRoom(id: "3", name: "Room 3"))
-//        self.tableView.reloadData()
-//    }
 
     // MARK: - Table view data source
 
@@ -90,7 +82,13 @@ class ChatRoomsTableViewController: UITableViewController {
         return cell
     }
  
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == Section.currentChatRoomSection.rawValue{
+            let chatRoom = chatRoomsList[indexPath.row]
+            self.performSegue(withIdentifier: "showChatRoom", sender: chatRoom)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -126,15 +124,19 @@ class ChatRoomsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        if let chatRoom = sender as? ChatRoom{
+            let chatVC = segue.destination as! ChatRoomViewController
+            chatVC.senderDisplayName = senderName
+            chatVC.chatRoom = chatRoom
+            chatVC.chatRoomRef = chatRoomsRef.child(chatRoom.roomId!)
+        }
     }
-    */
     
     // MARK: Firebase related methods
     private func observeChannels() {

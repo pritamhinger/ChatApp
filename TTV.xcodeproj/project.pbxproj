@@ -16,6 +16,7 @@
 		480AC9EC1DE49CD000ACC9BA /* TTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9EB1DE49CD000ACC9BA /* TTVTests.swift */; };
 		480AC9F71DE49CD000ACC9BA /* TTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9F61DE49CD000ACC9BA /* TTVUITests.swift */; };
 		480ACA051DE49E1D00ACC9BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */; };
+		489979891DE4C53A00F5E856 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489979881DE4C53A00F5E856 /* ChatRoomViewController.swift */; };
 		48F61BF81DE4A85300DBBE29 /* ChatRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */; };
 		48F61BFA1DE4AA6800DBBE29 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */; };
 		48F61BFC1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */; };
@@ -58,6 +59,7 @@
 		480AC9F61DE49CD000ACC9BA /* TTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTVUITests.swift; sourceTree = "<group>"; };
 		480AC9F81DE49CD000ACC9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		489979881DE4C53A00F5E856 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomsTableViewController.swift; sourceTree = "<group>"; };
 		48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				48F61BF71DE4A85300DBBE29 /* ChatRoomsTableViewController.swift */,
 				48F61BF91DE4AA6800DBBE29 /* ChatRoom.swift */,
 				48F61BFB1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift */,
+				489979881DE4C53A00F5E856 /* ChatRoomViewController.swift */,
 			);
 			path = TTV;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				48F61BFA1DE4AA6800DBBE29 /* ChatRoom.swift in Sources */,
 				48F61BFC1DE4B0EE00DBBE29 /* ChatRoomTableViewCell.swift in Sources */,
 				48F61BF81DE4A85300DBBE29 /* ChatRoomsTableViewController.swift in Sources */,
+				489979891DE4C53A00F5E856 /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
