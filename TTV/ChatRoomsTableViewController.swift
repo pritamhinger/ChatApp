@@ -20,21 +20,38 @@ class ChatRoomsTableViewController: UITableViewController {
     var newChatRoomNameTextField:UITextField?
     private var chatRoomsList:[ChatRoom] = []
     
-    private lazy var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("chatRooms")
-    private var channelRefHandle: FIRDatabaseHandle?
+    private lazy var chatRoomsRef: FIRDatabaseReference = FIRDatabase.database().reference().child("chatRooms")
+    private var chatRoomsRefHandle: FIRDatabaseHandle?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Available Chat Rooms"
+        observeChannels()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chatRoomsList.append(ChatRoom(id: "1", name: "Room 1"))
-        chatRoomsList.append(ChatRoom(id: "2", name: "Room 2"))
-        chatRoomsList.append(ChatRoom(id: "3", name: "Room 3"))
-        self.tableView.reloadData()
+    deinit {
+        if let refHandle = chatRoomsRefHandle{
+            chatRoomsRef.removeObserver(withHandle: refHandle)
+        }
     }
+    
+    
+    @IBAction func createChatRoom(_ sender: UIButton) {
+        if let name = newChatRoomNameTextField?.text{
+            let newChatRoomRef = chatRoomsRef.childByAutoId()
+            let chatRoomNode = ["name":name];
+            newChatRoomRef.setValue(chatRoomNode);
+        }
+    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        chatRoomsList.append(ChatRoom(id: "1", name: "Room 1"))
+//        chatRoomsList.append(ChatRoom(id: "2", name: "Room 2"))
+//        chatRoomsList.append(ChatRoom(id: "3", name: "Room 3"))
+//        self.tableView.reloadData()
+//    }
 
     // MARK: - Table view data source
 
@@ -118,5 +135,21 @@ class ChatRoomsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Firebase related methods
+    private func observeChannels() {
+        // Use the observe method to listen for new
+        // channels being written to the Firebase DB
+        chatRoomsRefHandle = chatRoomsRef.observe(.childAdded, with: { (snapshot) -> Void in // 1
+            let channelData = snapshot.value as! Dictionary<String, AnyObject> // 2
+            let id = snapshot.key
+            if let name = channelData["name"] as! String!, name.characters.count > 0 { // 3
+                self.chatRoomsList.append(ChatRoom(id: id, name: name))
+                self.tableView.reloadData()
+            } else {
+                print("Error! Could not decode channel data")
+            }
+        })
+    }
 
 }
