@@ -32,7 +32,7 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7H-4F-8zc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter your username here" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ak1-pO-MYS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your username here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ak1-pO-MYS">
                                 <rect key="frame" x="16" y="280" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -129,7 +129,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ce5-4D-bHR"/>
                     <connections>
-                        <segue destination="Rz5-Xq-bmf" kind="showDetail" identifier="showChatRoom" id="5ta-hG-vdT"/>
+                        <segue destination="Rz5-Xq-bmf" kind="show" identifier="showChatRoom" action="showDetailViewController:sender:" id="5ta-hG-vdT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZa-pt-x9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,7 +139,7 @@
         <!--Chat Room View Controller-->
         <scene sceneID="Mwb-G4-RGn">
             <objects>
-                <viewController id="Rz5-Xq-bmf" customClass="ChatRoomViewController" customModule="TTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="formSheet" id="Rz5-Xq-bmf" customClass="ChatRoomViewController" customModule="TTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l6P-gM-E01"/>
                         <viewControllerLayoutGuide type="bottom" id="EnB-oD-rtg"/>
