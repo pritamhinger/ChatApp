@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 enum Section: Int {
     case createNewChatRoomSection = 0
@@ -18,6 +19,10 @@ class ChatRoomsTableViewController: UITableViewController {
     var senderName:String?
     var newChatRoomNameTextField:UITextField?
     private var chatRoomsList:[ChatRoom] = []
+    
+    private lazy var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("chatRooms")
+    private var channelRefHandle: FIRDatabaseHandle?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
