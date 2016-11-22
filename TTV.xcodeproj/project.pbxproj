@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F546D7E3DAFA08BF6E92F7D /* Pods_TTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE45AF933A6BB4D5C482B28 /* Pods_TTVTests.framework */; };
 		480AC9D71DE49CD000ACC9BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9D61DE49CD000ACC9BA /* AppDelegate.swift */; };
 		480AC9D91DE49CD000ACC9BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9D81DE49CD000ACC9BA /* ViewController.swift */; };
 		480AC9DC1DE49CD000ACC9BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480AC9DA1DE49CD000ACC9BA /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		480AC9E11DE49CD000ACC9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480AC9DF1DE49CD000ACC9BA /* LaunchScreen.storyboard */; };
 		480AC9EC1DE49CD000ACC9BA /* TTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9EB1DE49CD000ACC9BA /* TTVTests.swift */; };
 		480AC9F71DE49CD000ACC9BA /* TTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC9F61DE49CD000ACC9BA /* TTVUITests.swift */; };
+		480ACA051DE49E1D00ACC9BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */; };
+		4D145A59A0CEB0093BE22C1B /* Pods_TTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F49CE2C7C56FB6EA41EEA /* Pods_TTV.framework */; };
+		D287ED4225427F846C65076E /* Pods_TTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64442F8178558677CCEEFC80 /* Pods_TTVUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1771EB74F66907E0DB67AE95 /* Pods-TTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTV/Pods-TTV.release.xcconfig"; sourceTree = "<group>"; };
+		207F07BB7AC9E36D262548B6 /* Pods-TTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTV/Pods-TTV.debug.xcconfig"; sourceTree = "<group>"; };
+		28246CAB3072BC0F7835AB1D /* Pods-TTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTVUITests/Pods-TTVUITests.release.xcconfig"; sourceTree = "<group>"; };
 		480AC9D31DE49CD000ACC9BA /* TTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		480AC9D61DE49CD000ACC9BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		480AC9D81DE49CD000ACC9BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		480AC9F21DE49CD000ACC9BA /* TTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		480AC9F61DE49CD000ACC9BA /* TTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTVUITests.swift; sourceTree = "<group>"; };
 		480AC9F81DE49CD000ACC9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DE45AF933A6BB4D5C482B28 /* Pods_TTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64442F8178558677CCEEFC80 /* Pods_TTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC1AEFB43858EEFD1DAA3C5 /* Pods-TTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTVTests/Pods-TTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		844F49CE2C7C56FB6EA41EEA /* Pods_TTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957C3969479F38C8BDF209B1 /* Pods-TTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTVUITests/Pods-TTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2BF7B0651F96C0104749AF0 /* Pods-TTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTVTests/Pods-TTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D145A59A0CEB0093BE22C1B /* Pods_TTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F546D7E3DAFA08BF6E92F7D /* Pods_TTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D287ED4225427F846C65076E /* Pods_TTVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				480AC9EA1DE49CD000ACC9BA /* TTVTests */,
 				480AC9F51DE49CD000ACC9BA /* TTVUITests */,
 				480AC9D41DE49CD000ACC9BA /* Products */,
+				FD46A06C7720B7691A10DCD5 /* Pods */,
+				4EF46930178BAD789C1178F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +116,7 @@
 		480AC9D51DE49CD000ACC9BA /* TTV */ = {
 			isa = PBXGroup;
 			children = (
+				480ACA041DE49E1D00ACC9BA /* GoogleService-Info.plist */,
 				480AC9D61DE49CD000ACC9BA /* AppDelegate.swift */,
 				480AC9D81DE49CD000ACC9BA /* ViewController.swift */,
 				480AC9DA1DE49CD000ACC9BA /* Main.storyboard */,
@@ -125,6 +145,29 @@
 			path = TTVUITests;
 			sourceTree = "<group>";
 		};
+		4EF46930178BAD789C1178F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844F49CE2C7C56FB6EA41EEA /* Pods_TTV.framework */,
+				5DE45AF933A6BB4D5C482B28 /* Pods_TTVTests.framework */,
+				64442F8178558677CCEEFC80 /* Pods_TTVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD46A06C7720B7691A10DCD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				207F07BB7AC9E36D262548B6 /* Pods-TTV.debug.xcconfig */,
+				1771EB74F66907E0DB67AE95 /* Pods-TTV.release.xcconfig */,
+				E2BF7B0651F96C0104749AF0 /* Pods-TTVTests.debug.xcconfig */,
+				7BC1AEFB43858EEFD1DAA3C5 /* Pods-TTVTests.release.xcconfig */,
+				957C3969479F38C8BDF209B1 /* Pods-TTVUITests.debug.xcconfig */,
+				28246CAB3072BC0F7835AB1D /* Pods-TTVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 480AC9FB1DE49CD000ACC9BA /* Build configuration list for PBXNativeTarget "TTV" */;
 			buildPhases = (
+				CF2266B6B77A5B2C3F45D2D4 /* [CP] Check Pods Manifest.lock */,
 				480AC9CF1DE49CD000ACC9BA /* Sources */,
 				480AC9D01DE49CD000ACC9BA /* Frameworks */,
 				480AC9D11DE49CD000ACC9BA /* Resources */,
+				7CA326798CE422261C947C21 /* [CP] Embed Pods Frameworks */,
+				27BC25FE02889811FD5771FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 480AC9FE1DE49CD000ACC9BA /* Build configuration list for PBXNativeTarget "TTVTests" */;
 			buildPhases = (
+				4EA2B377E6761B6BB721B781 /* [CP] Check Pods Manifest.lock */,
 				480AC9E31DE49CD000ACC9BA /* Sources */,
 				480AC9E41DE49CD000ACC9BA /* Frameworks */,
 				480AC9E51DE49CD000ACC9BA /* Resources */,
+				BD03CC44371D7C2881F5A3EC /* [CP] Embed Pods Frameworks */,
+				B5D201FEF037F19B99A3D4EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 480ACA011DE49CD000ACC9BA /* Build configuration list for PBXNativeTarget "TTVUITests" */;
 			buildPhases = (
+				64D39C4A4C77751572A1D139 /* [CP] Check Pods Manifest.lock */,
 				480AC9EE1DE49CD000ACC9BA /* Sources */,
 				480AC9EF1DE49CD000ACC9BA /* Frameworks */,
 				480AC9F01DE49CD000ACC9BA /* Resources */,
+				1B8CC757657074DCA2314EC3 /* [CP] Embed Pods Frameworks */,
+				0AC4013420F01786E7B16D7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				480AC9E11DE49CD000ACC9BA /* LaunchScreen.storyboard in Resources */,
+				480ACA051DE49E1D00ACC9BA /* GoogleService-Info.plist in Resources */,
 				480AC9DE1DE49CD000ACC9BA /* Assets.xcassets in Resources */,
 				480AC9DC1DE49CD000ACC9BA /* Main.storyboard in Resources */,
 			);
@@ -256,6 +309,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC4013420F01786E7B16D7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTVUITests/Pods-TTVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B8CC757657074DCA2314EC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTVUITests/Pods-TTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27BC25FE02889811FD5771FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTV/Pods-TTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA2B377E6761B6BB721B781 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64D39C4A4C77751572A1D139 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CA326798CE422261C947C21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTV/Pods-TTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D201FEF037F19B99A3D4EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTVTests/Pods-TTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD03CC44371D7C2881F5A3EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTVTests/Pods-TTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2266B6B77A5B2C3F45D2D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		480AC9CF1DE49CD000ACC9BA /* Sources */ = {
@@ -411,6 +602,7 @@
 		};
 		480AC9FC1DE49CD000ACC9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207F07BB7AC9E36D262548B6 /* Pods-TTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QK5A5T3HGQ;
@@ -424,6 +616,7 @@
 		};
 		480AC9FD1DE49CD000ACC9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1771EB74F66907E0DB67AE95 /* Pods-TTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QK5A5T3HGQ;
@@ -437,6 +630,7 @@
 		};
 		480AC9FF1DE49CD000ACC9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BF7B0651F96C0104749AF0 /* Pods-TTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +646,7 @@
 		};
 		480ACA001DE49CD000ACC9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC1AEFB43858EEFD1DAA3C5 /* Pods-TTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +662,7 @@
 		};
 		480ACA021DE49CD000ACC9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957C3969479F38C8BDF209B1 /* Pods-TTVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QK5A5T3HGQ;
@@ -481,6 +677,7 @@
 		};
 		480ACA031DE49CD000ACC9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28246CAB3072BC0F7835AB1D /* Pods-TTVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QK5A5T3HGQ;
