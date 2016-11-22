@@ -7,6 +7,7 @@ target 'TTV' do
 
   # Pods for TTV
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
   target 'TTVTests' do
     inherit! :search_paths
